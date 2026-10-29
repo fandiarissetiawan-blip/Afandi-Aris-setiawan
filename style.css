@@ -1,0 +1,29 @@
+:root{--bg:#f4f6fb;--card:#fff;--text:#1d2433;--muted:#5b6578;--accent:#1f5eff;--head:#12223f;--line:#dde3ee;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1420;--card:#18202f;--text:#e8ecf5;--muted:#9aa5bb;--accent:#6b97ff;--head:#0a0f19;--line:#2a3447}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--head);color:#fff;text-align:center;padding:28px 16px 16px}
+header h1{margin:0;font-size:1.7rem;letter-spacing:.08em}
+header p{margin:4px 0 14px;color:#b9c6e4}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+nav a{color:#fff;text-decoration:none;font-size:.85rem;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.25)}
+nav a.active,nav a:hover{background:var(--accent);border-color:var(--accent)}
+main{max-width:860px;margin:0 auto;padding:24px 16px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}
+h2{margin:0 0 10px;font-size:1.4rem}
+h3{margin:0 0 6px;font-size:1.05rem;color:var(--accent)}
+.muted{color:var(--muted);font-size:.9rem}
+.tl{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--accent)}
+.tl li{margin:0 0 14px;position:relative}
+.tl li::before{content:"";position:absolute;left:-25px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.tl b{display:block}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--head);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:12px}
+.grid .card{margin:0}
+.ph{aspect-ratio:4/3;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7a5cff);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.item p{margin:8px 0 0;font-size:.9rem}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 16px 28px}
